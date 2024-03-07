@@ -2,24 +2,30 @@
 .app-container {
   height: 100vh; // Altura total da janela de visualização
   background-color: #F1F2F6; // Fundo cinza para a página inteira
+  font-family: 'Roboto', sans-serif; // Fonte Roboto para a página inteira
+  width: 100%; // Largura total da janela de visualização
+  display: flex; // Usar flexbox para o layout
+  flex-direction: column; // Dividir os elementos verticalmente
+  overflow: hidden; // Ocultar qualquer conteúdo que exceda a altura da janela
 }
 .main-layout {
-  display: flex; // Usar flexbox para organizar a estrutura da página
+  display: flex; // Usar flexbox para o layout
   height: 100%; // Ocupar a altura total da janela de visualização
   overflow: hidden; // Ocultar qualquer conteúdo que exceda a altura da janela
+  width: 100%; // Ocupar a largura total da janela de visualização
 }
 
 .sidebar {
   width: 250px; // Largura fixa para a side-bar
-  margin-right: 25px; // Margem à direita para separar do conteúdo
+  margin-right: 100px; // Margem à direita para separar do conteúdo
 }
 
-.content-area {
+.content-ar {
   transition: margin-left 0.3s;
   flex-grow: 1; // Ocupar o espaço restante
-  width: calc(100% - 350px); // Ajustar a largura com base na side-bar
+  width: calc(100%); // Ajustar a largura com base na side-bar
 
-  height: 10%; // Ocupar a altura total
+  height: 100%; // Ocupar a altura total
   &.expanded {
     margin-left: 0; // Sem margem à esquerda quando a side-bar está oculta
   }

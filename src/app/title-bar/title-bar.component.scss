@@ -1,5 +1,5 @@
  .title-bar {
-    background-color: #007bff;  // Um azul agradável como exemplo
+    background-color: #2196F3;  // Um azul agradável como exemplo
     display: flex;
     align-items: center;
     color: white;
@@ -8,6 +8,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     width: 100%;
+    height: 3rem; // Altura fixa
     position: fixed;
     top: 0;
     left: 0;

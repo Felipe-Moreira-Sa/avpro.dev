@@ -7,6 +7,7 @@
   margin: 20px; // Margem externa
   display: flex;
   flex-direction: column; // Organizar o título e o conteúdo em colunas
+  height: 100%; // Ocupa a altura total do container
 }
 
 .content-wrapper {
