@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'avpro.dev';
+  isSidebarVisible = true;
+  title = 'Dashboard';
+
+  toggleSidebar(isMenuOpen: boolean) {
+    console.log(isMenuOpen);
+    this.isSidebarVisible = isMenuOpen;
+  }
 }

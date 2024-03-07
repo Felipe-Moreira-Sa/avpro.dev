@@ -1,0 +1,35 @@
+ .title-bar {
+    background-color: #007bff;  // Um azul agradável como exemplo
+    display: flex;
+    color: white;
+    padding: 0.5rem 1rem; // Espaçamento interno
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+  }
+
+  .icon-placeholder {
+    // Use o espaço reservado para adicionar estilos ao ícone depois
+    margin-right: 1rem; // Espaço entre o ícone e o título
+  }
+
+  // button transparente
+  .transparent-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333; // Cor de texto semelhante à da imagem
+  }

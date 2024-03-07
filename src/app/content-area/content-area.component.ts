@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content-area',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './content-area.component.scss'
 })
 export class ContentAreaComponent {
+  @Input() title: string = 'Dashboard';
 
+  onChangeTitle(newTitle: string) {
+    this.title = newTitle;
+  }
 }
