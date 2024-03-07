@@ -1,38 +1,35 @@
-// body configure
-body {
-  background-color: #F1F2F6; // Replace #ffffff with the desired background color
+// app.component.scss
+.app-container {
+  height: 100vh; // Altura total da janela de visualização
+  background-color: #F1F2F6; // Fundo cinza para a página inteira
+}
+.main-layout {
+  display: flex; // Usar flexbox para organizar a estrutura da página
+  height: 100%; // Ocupar a altura total da janela de visualização
+  overflow: hidden; // Ocultar qualquer conteúdo que exceda a altura da janela
 }
 
-.app-container {
-    display: flex;
-    background-color: #fff; // Fundo cinza para a página inteira
-  }
-  
-  .sidebar {
-    width: 250px; // Largura fixa para a side-bar
-    // estilos adicionais da side-bar
-  }
-  
-  .content-area {
-    background-color: #000;
-    transition: margin-left 0.3s;
+.sidebar {
+  width: 250px; // Largura fixa para a side-bar
+  margin-right: 25px; // Margem à direita para separar do conteúdo
+}
 
-    
-    &.expanded {
-      margin-left: 250px; // Margem à esquerda quando a side-bar está expandida
-    }
+.content-area {
+  transition: margin-left 0.3s;
+  flex-grow: 1; // Ocupar o espaço restante
+  width: calc(100% - 350px); // Ajustar a largura com base na side-bar
+
+  height: 10%; // Ocupar a altura total
+  &.expanded {
+    margin-left: 0; // Sem margem à esquerda quando a side-bar está oculta
   }
+}
   
-  .page-title {
-    background-color: #000; // Fundo branco para o título da página
-    padding: 20px; // Espaçamento interno
-    border-bottom: 1px solid #e0e0e0; // Linha de separação
-  }
+.content-wrapper {
+  background-color: #000; // Fundo branco para o conteúdo
+  margin: 20px; // Margem em torno do conteúdo
+  padding: 20px; // Espaçamento interno
+  flex-grow: 1;
+  overflow-y: auto; // Scroll se necessário
+}
   
-  .content-wrapper {
-    background-color: #fff; // Fundo branco para o conteúdo
-    margin: 20px; // Margem em torno do conteúdo
-    padding: 20px; // Espaçamento interno
-    flex-grow: 1;
-    overflow-y: auto; // Scroll se necessário
-  }

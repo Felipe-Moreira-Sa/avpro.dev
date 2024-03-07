@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './content-area.component.scss'
 })
 export class ContentAreaComponent {
-  @Input() title: string = 'Dashboard';
+  @Input() subtitle: string = 'Dashboard';
 
   onChangeTitle(newTitle: string) {
-    this.title = newTitle;
+    this.subtitle = newTitle;
   }
 }
