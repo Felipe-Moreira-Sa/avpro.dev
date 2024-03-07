@@ -1,6 +1,7 @@
  .title-bar {
     background-color: #007bff;  // Um azul agradável como exemplo
     display: flex;
+    align-items: center;
     color: white;
     padding: 0.5rem 1rem; // Espaçamento interno
     font-family: 'Roboto', sans-serif;
@@ -31,5 +32,5 @@
   .title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #333; // Cor de texto semelhante à da imagem
+    color: #fff; // Cor de texto semelhante à da imagem
   }
