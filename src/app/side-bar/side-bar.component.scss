@@ -20,6 +20,7 @@
       margin: 0;
       margin-left: 1rem; // Espaçamento à esquerda
       margin-top: 2rem; // Espaçamento superior
+      
       li {
         display: flex;
         align-items: center;
@@ -47,11 +48,11 @@
   }
   
   .side-bar ul li.active a {
-    color: blue; /* Cor para o estado ativo */
+    color: #2196F3; /* Cor para o estado ativo */
   }
   
   .side-bar ul li.active .material-icons {
-    color: blue; /* Cor para o estado ativo */
+    color: #2196F3 !important;  /* Cor para o estado ativo */
   }
 
   

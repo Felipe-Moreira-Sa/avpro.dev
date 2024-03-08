@@ -14,11 +14,12 @@
   height: 100%; // Ocupar a altura total da janela de visualização
   width: 100%; // Ocupar a largura total da janela de visualização
   margin-top: 40px; // Margem em torno do layout principal
+  margin-left: 20px;
 }
 
 .sidebar {
   width: 250px; // Largura fixa para a side-bar
-  margin-right: 20px; // Margem à direita para separar do conteúdo
+  margin-right: 0px; // Margem à direita para separar do conteúdo
 }
 
 .content-ar {
