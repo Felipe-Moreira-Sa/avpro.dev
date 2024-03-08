@@ -1,9 +1,15 @@
 <aside class="side-bar">
     <nav>
       <ul id="spacebetweenlist">
-        <li><a href="#"> <span class="material-icons">dashboard</span> Dashboard</a></li>
-        <li><a href="#"><span class="material-icons">credit_card</span> Plans</a></li>
-        <li><a href="#"><span class="material-icons">people</span> Users</a></li>
+        <li [ngClass]="{'active': activeItem === 'Dashboard'}"
+        (click)="setActive('Dashboard'); onMenuItemClick('Dashboard')"><a> 
+          <span class="material-icons">dashboard</span> Dashboard</a></li>
+        <li [ngClass]="{'active': activeItem === 'Plans'}" (click)="setActive('Plans')"
+        (click)="onMenuItemClick('Plans')"><a >
+          <span class="material-icons">credit_card</span> Plans</a></li>
+        <li [ngClass]="{'active': activeItem === 'Users'}" (click)="setActive('Users')"
+        (click)="onMenuItemClick('Users')"><a >
+          <span class="material-icons">people</span> Users</a></li>
       </ul>
     </nav>
   </aside>

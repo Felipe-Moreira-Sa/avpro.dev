@@ -10,7 +10,7 @@ import { ContentAreaComponent } from './content-area/content-area.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PlansComponent } from './pages/plans/plans.component';
 import { UsersComponent } from './pages/users/users.component';
-import { DynamicContentComponent } from './pages/dynamic-content/dynamic-content.component';
+
 
 @NgModule({
   declarations: [
@@ -20,8 +20,7 @@ import { DynamicContentComponent } from './pages/dynamic-content/dynamic-content
     ContentAreaComponent,
     DashboardComponent,
     PlansComponent,
-    UsersComponent,
-    DynamicContentComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,
