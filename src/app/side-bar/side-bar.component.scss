@@ -1,17 +1,16 @@
 .side-bar {
     position: absolute;
-    top: 30px; // Distance from the top
+    top: 40px; // Distance from the top
     left: 0;
     background-color: #fff; // Fundo branco
     font-family: 'Roboto', sans-serif; // Aplicar a fonte Roboto
     color: #212121; // Texto preto
-    width: 250px; // Largura da side-bar
+    width: 200px; // Largura da side-bar
     height: 100%; // Altura da side-bar
     position: fixed;
     transition: transform 0.3s ease-in-out;
     transform: translateX(0); // estado padrão
-    margin-right: 10px; // Espaçamento à direita
-    
+    margin-right: 0px; // Espaçamento à direita  
     &.hidden {
         transform: translateX(-100%); // estado oculto
     }
@@ -19,11 +18,13 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      margin-left: 1rem; // Espaçamento à esquerda
+      margin-top: 2rem; // Espaçamento superior
       li {
         display: flex;
         align-items: center;
-        padding: 1rem;
-        margin: 0.5rem 0; // Espaçamento vertical
+        padding: 0.5rem;
+        margin: 0rem 0; // Espaçamento vertical
         border-radius: 4px; // Bordas arredondadas para o efeito hover
         a {
             color: #212121; // Texto preto
@@ -33,7 +34,8 @@
             width: 100%; // Ocupa toda a largura do li
     
             .material-icons {
-              margin-right: 1rem; // Espaço entre o ícone e o texto
+              margin-right: 2rem; // Espaço entre o ícone e o texto
+              color:#777777;
             }
           }
         &:hover {

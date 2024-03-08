@@ -3,8 +3,8 @@
   background-color: #ffffff; // Cor de fundo branco para a caixa de conteúdo
   border-radius: 8px; // Bordas arredondadas
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para destacar a caixa sobre o fundo
-  padding: 20px; // Espaçamento interno
-  margin: 20px; // Margem externa
+  padding: 10px; // Espaçamento interno
+  margin: -1px; // Margem externa
   display: flex;
   flex-direction: column; // Organizar o título e o conteúdo em colunas
   height: 100%; // Ocupa a altura total do container
@@ -22,12 +22,14 @@
 }
 
 .page-title {
-  padding: 15px 20px; // Espaçamento interno adequado
+  padding-top: 20px; // Espaçamento interno para o título
+  padding-bottom: 20px; // Espaçamento interno para o título
+  font-size: medium; // Tamanho da fonte um pouco maior para destaque
   font-family: 'Roboto', sans-serif; // Fonte Roboto como mencionado antes
-  font-size: 1.5rem; // Tamanho da fonte um pouco maior para destaque
-  font-weight: 200; // Peso da fonte para um pouco de ênfase
-  color: #333; // Cor do texto em cinza escuro para contraste com o fundo branco
+  font-size: small; // Tamanho da fonte um pouco maior para destaque
+  font-weight: 500; // Peso da fonte para destaque
+  color: #828487; // Cor do texto em cinza escuro para contraste com o fundo branco
   border-bottom: 1px solid #e0e0e0; // Uma borda na parte inferior para separar do conteúdo
-  margin-top: 40px; // Margem na parte superior para separar do conteúdo acima
+  margin-top: 20px; // Margem na parte superior para separar do conteúdo acima
   margin-bottom: 2px; // Margem na parte inferior para separar do conteúdo abaixo
 }

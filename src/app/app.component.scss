@@ -1,23 +1,24 @@
 // app.component.scss
 .app-container {
-  height: 100vh; // Altura total da janela de visualização
+  height: 100%; // Altura total da janela de visualização
   background-color: #F1F2F6; // Fundo cinza para a página inteira
   font-family: 'Roboto', sans-serif; // Fonte Roboto para a página inteira
   width: 100%; // Largura total da janela de visualização
   display: flex; // Usar flexbox para o layout
   flex-direction: column; // Dividir os elementos verticalmente
   overflow: hidden; // Ocultar qualquer conteúdo que exceda a altura da janela
+  font-size: small; // Tamanho da fonte menor para a página inteira
 }
 .main-layout {
   display: flex; // Usar flexbox para o layout
   height: 100%; // Ocupar a altura total da janela de visualização
-  overflow: hidden; // Ocultar qualquer conteúdo que exceda a altura da janela
   width: 100%; // Ocupar a largura total da janela de visualização
+  margin-top: 40px; // Margem em torno do layout principal
 }
 
 .sidebar {
   width: 250px; // Largura fixa para a side-bar
-  margin-right: 100px; // Margem à direita para separar do conteúdo
+  margin-right: 20px; // Margem à direita para separar do conteúdo
 }
 
 .content-ar {
